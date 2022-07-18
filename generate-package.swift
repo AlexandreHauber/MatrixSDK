@@ -2,7 +2,7 @@ import Foundation
 
 func packageString(url: String, checksum: String) -> String {
     """
-    // swift-tools-version:5.3
+    // swift-tools-version:5.6
 
     import PackageDescription
 
