@@ -47,11 +47,9 @@ jobs:
         plutil -insert CFBundleShortVersionString -string $SHORT_VERSION MatrixSDK-iOS.xcarchive/Products/Library/Frameworks/MatrixSDK.framework/Info.plist
         plutil -insert CFBundleShortVersionString -string $SHORT_VERSION MatrixSDK-iOSSimulator.xcarchive/Products/Library/Frameworks/MatrixSDK.framework/Info.plist
         plutil -insert CFBundleShortVersionString -string $SHORT_VERSION MatrixSDK-macOS.xcarchive/Products/Library/Frameworks/MatrixSDK.framework/Resources/Info.plist
-        plutil -insert CFBundleShortVersionString -string $SHORT_VERSION MatrixSDK-MacCatalyst.xcarchive/Products/Library/Frameworks/MatrixSDK.framework/Resources/Info.plist
         plutil -insert CFBundleVersion -string $GITHUB_RUN_NUMBER MatrixSDK-iOS.xcarchive/Products/Library/Frameworks/MatrixSDK.framework/Info.plist
         plutil -insert CFBundleVersion -string $GITHUB_RUN_NUMBER MatrixSDK-iOSSimulator.xcarchive/Products/Library/Frameworks/MatrixSDK.framework/Info.plist
         plutil -insert CFBundleVersion -string $GITHUB_RUN_NUMBER MatrixSDK-macOS.xcarchive/Products/Library/Frameworks/MatrixSDK.framework/Resources/Info.plist
-        plutil -insert CFBundleVersion -string $GITHUB_RUN_NUMBER MatrixSDK-MacCatalyst.xcarchive/Products/Library/Frameworks/MatrixSDK.framework/Resources/Info.plist
       
     - name: Make XCFramework
       working-directory: matrix-ios-sdk/build
